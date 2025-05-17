@@ -1,10 +1,15 @@
 import React from 'react';
 
 import { DUMMY_NEWS } from '@/dummy-news';
+import { notFound } from 'next/navigation';
 
 export default function NewsDetails({ params }) {
   const newsSlug = params.slug;
   const newsItem = DUMMY_NEWS.find((newsItem) => newsItem.slug === newsSlug);
+
+  if (!newsItem) {
+    notFound();
+  }
 
   return (
     <article className="news-article">
