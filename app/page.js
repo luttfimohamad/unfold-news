@@ -1,7 +1,10 @@
 export default function HomePage() {
   return (
     <div id="home">
-      <h1>Next.js Routing & Page Rendering</h1>
+      <h1>
+        HAHAHA kutertawa HAHAHA padahal sakit sebenarnya
+        <br /> <br /> Bisa-bisanya kau Anggap ku bahagia TAK JELASKAH KU KECEWA?
+      </h1>
     </div>
   );
 }

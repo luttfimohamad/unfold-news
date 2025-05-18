@@ -4,7 +4,7 @@ export default function MainHeader() {
   return (
     <header id="main-header">
       <div id="logo">
-        <Link href="/">NextNews</Link>
+        <Link href="/">UnfoldNews</Link>
       </div>
       <nav>
         <ul>
