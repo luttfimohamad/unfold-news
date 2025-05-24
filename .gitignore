@@ -1,2 +1,4 @@
 /node_modules
 /.next
+/backend/node_modules/
+**/node_modules/
