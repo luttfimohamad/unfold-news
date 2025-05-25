@@ -13,9 +13,17 @@ async function FilterHeader({ year, month }) {
   const availableYears = await getAvailableNewsYears();
   let links = availableYears;
 
+  // with sqlite3
+  // if (
+  //   (year && !availableYears.includes(year)) ||
+  //   (month && !getAvailableNewsMonths(year).includes(month))
+  // ) {
+  //   throw new Error('Invalid filter.');
+  // }
+
   if (
-    (year && !availableYears.includes(year)) ||
-    (month && !getAvailableNewsMonths(year).includes(month))
+    (year && !availableYears.includes(+year)) ||
+    (month && !getAvailableNewsMonths(+year).includes(+month))
   ) {
     throw new Error('Invalid filter.');
   }
